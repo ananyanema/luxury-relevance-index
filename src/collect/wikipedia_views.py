@@ -4,7 +4,7 @@ from urllib.parse import quote
 import pandas as pd
 import requests
 
-ARTICLES = ["Hermès", "Gucci", "Louis Vuitton", "Quiet luxury"]
+ARTICLES = ["Hermès", "Gucci", "Louis Vuitton", "Quiet luxury", "Coffee", "Bicycle"]
 START, END = "2019010100", "2026093000"   # complete months only
 HEADERS = {
     "User-Agent": "LuxuryRelevanceIndex/0.1 "
