@@ -26,3 +26,14 @@ Each finding states what the data shows and what it does not show.
 - Wikimedia's "human readers" filter excludes bots as classified by Wikimedia.
 
 Data source: Wikimedia Pageviews API (CC0).
+## Survey evidence: BCG-Altagamma True-Luxury Global Consumer Insights 2026
+
+Source: https://www.bcg.com/publications/2026/luxury-healthier-foundations-and-genai (published 7 July 2026). Survey of 10,000+ True-Luxury consumers in 11 markets. These are BCG's findings, paraphrased by us, not our own data.
+
+1. Top purchase drivers: design and aesthetics, craftsmanship and quality, timelessness. Logo visibility ranked least important.
+2. BCG describes a healthier revenue mix in which traditional personal-luxury categories fall from about 80% toward 60%, with growth in lifestyle and experiential luxury.
+3. Top-tier clients rose from 14% to 24% of spend over ten years. Aspirational consumers drove most of the market's volatility.
+4. 70% of consumers walked away from a purchase because the price seemed unjustified.
+5. 56% of aspirational consumers barely know the creative director's name, against 70% informed among top-tier consumers.
+
+Limits: stated preferences, not observed behaviour. True-Luxury buyers only. One edition. Produced by a consultancy that advises luxury brands.
