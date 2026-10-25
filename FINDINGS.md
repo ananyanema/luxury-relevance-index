@@ -37,3 +37,16 @@ Source: https://www.bcg.com/publications/2026/luxury-healthier-foundations-and-g
 5. 56% of aspirational consumers barely know the creative director's name, against 70% informed among top-tier consumers.
 
 Limits: stated preferences, not observed behaviour. True-Luxury buyers only. One edition. Produced by a consultancy that advises luxury brands.
+## Industry context: Goldman Sachs and Bain-Altagamma
+
+Goldman Sachs, "Why Luxury Goods Companies' Revenues Are Forecast to Climb" (22 October 2026): https://www.goldmansachs.com/insights/articles/why-luxury-goods-companies-revenues-are-forecast-to-climb
+1. Goldman Sachs Research forecasts revenue growth of 7% in 2027 and 6% in 2026 for a basket of listed luxury-goods companies.
+2. It attributes the recent slowdown mostly to strategic inertia and to price rises it estimates at around 60% between mid-2019 and mid-2026.
+3. It notes that a brand's codes and icons need not be loud logos.
+
+Bain & Company with Altagamma, Luxury Goods Worldwide Market Study, 24th edition (20 November 2025): https://www.bain.com/insights/finding-a-new-longevity-for-luxury/
+4. Overall luxury spending was about EUR 1.44 trillion in 2025, roughly flat on 2024.
+5. Personal luxury goods were forecast at EUR 358 billion in 2025, against EUR 364 billion in 2024.
+6. The study describes a shift toward luxury experiences and away from traditional goods.
+
+Limits: Goldman's figures are an investment-research forecast on listed companies, not consumer data. Both are views of a bank and a consultancy. We paraphrase and link, and do not copy.
