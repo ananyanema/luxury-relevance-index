@@ -113,6 +113,20 @@ Method: PELT change-point detection (ruptures library) on log-transformed monthl
 5. Gucci's Wikipedia breaks (2021-07, 2022-11) indicate a long elevated period, while Google Trends shows only a short spike in late 2021. The two sources disagree on this episode.
 
 Limits: the penalty settings are our choice and no significance test is attached. Breaks near the end of the series are less reliable. Direction is not shown. Several breaks in near-zero series are not meaningful.
+## 2d. Own data: how closely the series move together
+
+Method: correlation of monthly levels, correlation of month-to-month changes, and the share of variance explained by the first principal component (series standardised). Each Google Trends pull is analysed separately because scales differ between pulls. Data source: Google Trends.
+
+Category terms (one pull): levels correlate at 0.84 to 0.97. Month-to-month changes: luxury watches and luxury handbags 0.73, quiet luxury with the others 0.14 to 0.45, luxury resale with the others 0.10 to 0.36. First principal component: 93% of variance.
+
+Brand terms (a separate pull): levels: Gucci and Louis Vuitton 0.74, Hermes and Louis Vuitton 0.55, Hermes and Gucci 0.36. Month-to-month changes: Gucci and Louis Vuitton 0.85, Hermes with each of the others 0.43 to 0.46. First principal component: 71% of variance.
+
+1. The four category terms move mostly as one series. This largely reflects a shared rise and the 2025-08 break, and correlations between trending series are inflated, so the monthly-changes figures are more informative.
+2. Watches and handbags move together month to month, while resale and quiet luxury are only weakly tied to the others.
+3. Gucci and Louis Vuitton move closely together, while Hermes is less tied to both, partly supporting the idea that heritage-led and trend-led brands behave differently.
+4. A single index can summarise the category terms, but it would inherit the 2025-08 shift.
+
+Limits: three brands and four category terms only. All three brands share a December peak and the early-2026 spike, which raise correlations. The category terms all contain the word "luxury" and may share query effects. Correlation is not causation.
 
 ## 3. Survey evidence: BCG-Altagamma True-Luxury Global Consumer Insights 2026
 
@@ -172,6 +186,6 @@ This suggests status has not disappeared, so the verdict on question 3 may be "p
 | 1. Interest rising or declining? | Mixed so far. Trends and Wikipedia disagree for 2025-2026. |
 | 2. Coverage and discussion changing? | Not tested. GDELT access is blocked for now. |
 | 3. Shift from status toward craftsmanship, heritage, experience? | Surveys lean toward craft and emotional connection over status, but status has not disappeared. Our own proxy test is not done. |
-| 4. Segments and brands differ? | Not tested. |
+| 4. Segments and brands differ? | Segments: not supported as distinct patterns, they move mostly as one. Brands: partly supported, Hermes behaves differently from Gucci and Louis Vuitton. Three brands only. |
 | 5. Early signals? | Not tested. |
 | 6. Strategies worth investigating? | Not started. |
