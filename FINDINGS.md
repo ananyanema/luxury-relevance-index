@@ -148,6 +148,29 @@ Method: monthly log changes (to make the series steady), cross-correlation at la
 5. Hypothesis 5 (Wikipedia moves before other signals) is not supported. One episode, Gucci's Wikipedia rise from 2021-07 ahead of its Trends break in 2021-11, is an observation only.
 
 Limits: monthly data cannot show leads shorter than a month. Each p-value is the smallest over three lags. Bonferroni is strict and lowers power. Quiet luxury has only 35 months of overlap. Google Trends values are sampled and relative. Granger tests show predictive usefulness, not causation.
+## 2f. Own data: forecast backtest
+
+Method: walk-forward backtest. For each of 10 series, forecasts were made from every origin after the first 48 months, and the absolute error at 1, 3 and 6 months ahead was averaged. Four methods: naive (next month equals this month), seasonal naive (same month last year), 12-month average, and damped-trend exponential smoothing with yearly seasonality (ETS), fitted on a log scale. The table shows ETS error divided by the error of the best of the three simple methods: below 1 means ETS was better. Origins overlap, so they are not independent, and no significance test was run. Data sources: Google Trends; Wikimedia Pageviews API (CC0).
+
+| Series | 1 month | 3 months | 6 months |
+|---|---|---|---|
+| Trends: Gucci | 0.85 | 0.99 | 0.99 |
+| Trends: Hermes | 0.89 | 1.02 | 1.02 |
+| Trends: Louis Vuitton | 0.89 | 0.94 | 1.03 |
+| Trends: luxury handbags | 0.83 | 1.11 | 1.47 |
+| Trends: luxury resale | 1.40 | 1.42 | 1.82 |
+| Trends: luxury watches | 0.94 | 0.99 | 1.39 |
+| Trends: quiet luxury | 1.06 | 1.04 | 1.12 |
+| Wikipedia: Gucci | 1.46 | 0.97 | 1.09 |
+| Wikipedia: Hermes | 0.85 | 0.97 | 1.00 |
+| Wikipedia: Louis Vuitton | 1.08 | 1.18 | 1.17 |
+
+1. ETS beat the best simple method in 6 of 10 series at 1 month, 5 of 10 at 3 months and 2 of 10 at 6 months. It beat the naive forecast in 6, 6 and 4 of 10.
+2. Wins at 3 months were small (1% to 6%). For luxury resale, ETS was worse at every horizon.
+3. Forecasts beyond one month from a series' own history are not reliable for these data. The test window includes the 2025-08 shift and the early-2026 spike, which the history could not foretell.
+4. Series where ETS beat the best simple method at both 1 and 3 months: Trends Gucci, Trends Louis Vuitton, Trends luxury watches, Wikipedia Hermes. Only these will get a next-month outlook in the dashboard.
+
+Limits: ten series and overlapping origins. No significance test. Results depend on the four methods tried. Google Trends values are sampled and relative.
 
 ## 3. Survey evidence: BCG-Altagamma True-Luxury Global Consumer Insights 2026
 
@@ -209,4 +232,4 @@ This suggests status has not disappeared, so the verdict on question 3 may be "p
 | 3. Shift from status toward craftsmanship, heritage, experience? | Surveys lean toward craft and emotional connection over status, but status has not disappeared. Our own proxy test is not done. |
 | 4. Segments and brands differ? | Segments: not supported as distinct patterns, they move mostly as one. Brands: partly supported, Hermes behaves differently from Gucci and Louis Vuitton. Three brands only. |
 | 5. Early signals? | Not supported by our tests. No consistent lead between Wikipedia and Google Trends, and controls behave similarly. One 2021 Gucci episode is an observation only. A shared break in 2025-08 across the category terms is unexplained. |
-| 6. Strategies worth investigating? | Not started. |
+| 6. Strategies worth investigating? | Not started. The forecast backtest shows own-history forecasts add little beyond one month, so question 6 will rest on scenarios and the cited surveys, not predictions. |
