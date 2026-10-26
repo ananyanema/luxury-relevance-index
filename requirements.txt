@@ -7,8 +7,10 @@ click==8.5.0
 contourpy==1.4.0
 cycler==0.12.1
 fonttools==4.67.0
+formulaic==1.2.2
 h11==0.16.0
 idna==3.20
+interface_meta==2.0.1
 itsdangerous==2.2.0
 Jinja2==3.1.6
 jsonschema==4.26.0
@@ -21,6 +23,7 @@ narwhals==2.27.1
 numpy==2.5.4
 packaging==26.3
 pandas==3.1.0
+patsy==1.0.3
 pillow==13.0.0
 protobuf==7.36.2
 pyarrow==26.0.0
@@ -32,8 +35,10 @@ pytrends==4.9.2
 referencing==0.37.0
 requests==2.34.2
 rpds-py==2026.9.1
+scipy==1.18.1
 six==1.17.0
 starlette==1.9.0
+statsmodels==0.15.0
 streamlit==1.66.1
 typing_extensions==4.16.0
 tzdata==2026.5
@@ -41,3 +46,4 @@ urllib3==2.8.0
 uvicorn==0.54.0
 watchdog==6.0.0
 websockets==17.3
+wrapt==2.5.2rc1
