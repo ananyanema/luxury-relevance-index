@@ -86,6 +86,33 @@ Seasonal strength (0 = none, 1 = very strong). Google Trends: Hermes 0.58, Gucci
 5. The early-2026 surge in Gucci and Louis Vuitton searches barely moves their trend components, which is consistent with the robust method treating a short burst as irregular. Whether it is a short spike or a new level cannot yet be settled.
 
 Limits: seasonal strength is a variance ratio, so large spikes lower it. Trend estimates near the end of a series are less stable. Robust smoothing downweights short bursts. Three brands only. Google Trends values are relative.
+## 2c. Own data: change points
+
+Method: PELT change-point detection (ruptures library) on log-transformed monthly series, minimum segment 4 months. A date is the first month of a new level. The direction of the change is not shown. Two penalty settings (6x and 12x a baseline penalty we chose) were used, and a break counts as robust only if it appears under both. 2026 data runs to September. Data sources: Google Trends; Wikimedia Pageviews API (CC0).
+
+| Series | Robust breaks (both settings) | Only under the looser setting |
+|---|---|---|
+| Trends: Hermes | 2026-04 | 2020-04, 2022-02, 2024-06 |
+| Trends: Gucci | 2023-01, early 2026 (Feb or Mar) | 2026-06 |
+| Trends: Louis Vuitton | early 2026 (Feb or Mar) | 2026-06 |
+| Trends: quiet luxury | 2021-06 (near-zero values, ignore), 2023-04, 2025-08 | 2026-02 |
+| Trends: luxury resale | 2025-08 | 2023-01 or 2023-06, 2025-02 |
+| Trends: luxury watches | 2023-07, 2024-08, 2025-08 | none |
+| Trends: luxury handbags | 2025-08 | 2021-08, 2024-11, 2023-04 |
+| Wikipedia: Hermes | none | 2022-12, 2025-05 |
+| Wikipedia: Gucci | 2021-07, 2022-11, 2024-08 | none |
+| Wikipedia: Louis Vuitton | 2022-10, 2024-05, 2025-10 | none |
+| Wikipedia: Quiet luxury | 2024-02 | none |
+| Wikipedia: Coffee (control) | 2024-05, 2025-04 | none |
+| Wikipedia: Bicycle (control) | 2019-11, 2020-05, 2024-06 | 2025-07 |
+
+1. All four category terms break in 2025-08 under both settings. They come from one Google Trends pull. The brand terms and the Wikipedia Quiet luxury article show no break that month. The cause is unknown: it could be a real shift in generic luxury searches or a measurement effect in that pull. A repeat pull on another day is needed.
+2. Gucci and Louis Vuitton searches break in early 2026, and under the looser setting again in June, consistent with a short burst that reverted rather than a lasting new level. Under the stricter setting only the first break appears, so this is suggestive only.
+3. Quiet luxury searches break in 2023-04 under both settings, matching the step visible in the chart.
+4. Louis Vuitton's Wikipedia break in 2024-05 coincides with Coffee (2024-05) and Bicycle (2024-06), pointing to a site-wide shift, not a luxury-specific one.
+5. Gucci's Wikipedia breaks (2021-07, 2022-11) indicate a long elevated period, while Google Trends shows only a short spike in late 2021. The two sources disagree on this episode.
+
+Limits: the penalty settings are our choice and no significance test is attached. Breaks near the end of the series are less reliable. Direction is not shown. Several breaks in near-zero series are not meaningful.
 
 ## 3. Survey evidence: BCG-Altagamma True-Luxury Global Consumer Insights 2026
 
