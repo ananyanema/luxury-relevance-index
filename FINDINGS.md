@@ -127,6 +127,27 @@ Brand terms (a separate pull): levels: Gucci and Louis Vuitton 0.74, Hermes and 
 4. A single index can summarise the category terms, but it would inherit the 2025-08 shift.
 
 Limits: three brands and four category terms only. All three brands share a December peak and the early-2026 spike, which raise correlations. The category terms all contain the word "luxury" and may share query effects. Correlation is not causation.
+## 2e. Own data: lead-lag and Granger tests
+
+Method: monthly log changes (to make the series steady), cross-correlation at lags of -3 to +3 months, and Granger tests at lags 1 to 3 for Wikipedia and Google Trends in both directions. Seven pairs: four luxury pairs and three control pairs (unrelated Wikipedia articles against luxury Trends terms). Bonferroni correction for 14 tests: p < 0.0012. A positive best lag means Wikipedia moves first. Data sources: Google Trends; Wikimedia Pageviews API (CC0).
+
+| Pair | Months | Corr at lag 0 | Best lag | Corr at best lag | p: Wikipedia leads | p: Trends leads |
+|---|---|---|---|---|---|---|
+| Hermes | 92 | 0.28 | 0 | 0.28 | 0.130 | 0.026 |
+| Gucci | 92 | 0.40 | 0 | 0.40 | 0.138 | 0.607 |
+| Louis Vuitton | 92 | 0.03 | -3 | 0.16 | 0.397 | 0.176 |
+| Quiet luxury | 35 | -0.06 | 2 | 0.12 | 0.641 | 0.745 |
+| Control: Coffee vs Hermes | 92 | -0.20 | 2 | 0.27 | 0.120 | 0.476 |
+| Control: Coffee vs Gucci | 92 | -0.14 | 0 | -0.14 | 0.157 | 0.224 |
+| Control: Bicycle vs Louis Vuitton | 92 | -0.17 | 0 | -0.17 | 0.386 | 0.295 |
+
+1. No pair, luxury or control, survives the correction. We found no consistent lead in either direction.
+2. The smallest p-value (Hermes, Google Trends leading Wikipedia, 0.026) points opposite to our hypothesis and is consistent with chance given 14 tests.
+3. Gucci's correlation of 0.40 is at lag 0, so the series move together in the same month and do not lead each other. Shared spikes can inflate it.
+4. Control pairs reach correlations (0.27) similar to the luxury pairs, so correlations of this size occur between unrelated series.
+5. Hypothesis 5 (Wikipedia moves before other signals) is not supported. One episode, Gucci's Wikipedia rise from 2021-07 ahead of its Trends break in 2021-11, is an observation only.
+
+Limits: monthly data cannot show leads shorter than a month. Each p-value is the smallest over three lags. Bonferroni is strict and lowers power. Quiet luxury has only 35 months of overlap. Google Trends values are sampled and relative. Granger tests show predictive usefulness, not causation.
 
 ## 3. Survey evidence: BCG-Altagamma True-Luxury Global Consumer Insights 2026
 
@@ -187,5 +208,5 @@ This suggests status has not disappeared, so the verdict on question 3 may be "p
 | 2. Coverage and discussion changing? | Not tested. GDELT access is blocked for now. |
 | 3. Shift from status toward craftsmanship, heritage, experience? | Surveys lean toward craft and emotional connection over status, but status has not disappeared. Our own proxy test is not done. |
 | 4. Segments and brands differ? | Segments: not supported as distinct patterns, they move mostly as one. Brands: partly supported, Hermes behaves differently from Gucci and Louis Vuitton. Three brands only. |
-| 5. Early signals? | Not tested. |
+| 5. Early signals? | Not supported by our tests. No consistent lead between Wikipedia and Google Trends, and controls behave similarly. One 2021 Gucci episode is an observation only. A shared break in 2025-08 across the category terms is unexplained. |
 | 6. Strategies worth investigating? | Not started. |
