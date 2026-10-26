@@ -1,0 +1,8 @@
+pair,months,corr at lag 0,best lag,corr at best lag,p: wiki leads,p: trends leads,survives correction
+Hermes,92,0.28,0,0.28,0.1296,0.0263,False
+Gucci,92,0.4,0,0.4,0.1382,0.6067,False
+Louis Vuitton,92,0.03,-3,0.16,0.3968,0.1756,False
+Quiet luxury,35,-0.06,2,0.12,0.6407,0.7452,False
+CONTROL: Coffee vs Hermes,92,-0.2,2,0.27,0.1195,0.476,False
+CONTROL: Coffee vs Gucci,92,-0.14,0,-0.14,0.1572,0.2236,False
+CONTROL: Bicycle vs Louis Vuitton,92,-0.17,0,-0.17,0.3855,0.2949,False
