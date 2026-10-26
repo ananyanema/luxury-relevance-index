@@ -16,7 +16,7 @@ Category terms, average interest in 2019-2024 compared with 2025 onward (0 to 10
 | luxury handbags | 3.4 | 13.1 | +9.7 |
 
 1. All four category terms were higher in 2025-2026 than in 2019-2024. Much of this comes from a surge starting in mid-2025 whose cause is unknown.
-2. Gucci's search interest was lower in 2025 than in 2019, while Hermes and Louis Vuitton stayed roughly steady. All three peak every December.
+2. Gucci's search interest was lower in 2025 than in 2019, while Hermes was higher and Louis Vuitton slightly lower (see section 2b for the seasonally adjusted figures). December bumps appear in the charts, but see section 2b for how strong the seasonal pattern really is.
 3. Quiet luxury was near zero until early 2023, stepped up then, and surged again in 2025-2026.
 4. A control term (sneakers) did not show the same surge, but it had its own spike in 2026, so this check is suggestive, not proof.
 
@@ -46,6 +46,46 @@ Data source: Wikimedia Pageviews API (CC0). Human readers only. Index: 2019 aver
 Limits: two control articles are a small basis, and Bicycle rose in 2020, so it may reflect its own events. Page views are attention, not sales or purchase intent. Wikimedia's human-reader filter excludes bots as classified by Wikimedia.
 
 Comparing sections 1 and 2: in 2025-2026 Google Trends shows a surge for the category terms, while Wikipedia views for the brands fell and the Quiet luxury article stayed flat. Searching and reading an article are different behaviours, so question 1 is "mixed" for now.
+
+## 2b. Own data: seasonally adjusted trends (STL)
+
+Method: STL decomposition (yearly period, robust fit) of the monthly series, with the trend component indexed to its 2019 average = 100. The 2026 row covers January to September. Data sources: Google Trends; Wikimedia Pageviews API (CC0).
+
+Google Trends, trend component:
+
+| Year | Hermes | Gucci | Louis Vuitton |
+|---|---|---|---|
+| 2019 | 100 | 100 | 100 |
+| 2020 | 109 | 92 | 102 |
+| 2021 | 110 | 87 | 101 |
+| 2022 | 99 | 82 | 97 |
+| 2023 | 95 | 70 | 90 |
+| 2024 | 103 | 63 | 89 |
+| 2025 | 111 | 60 | 91 |
+| 2026 | 121 | 61 | 93 |
+
+Wikipedia, trend component:
+
+| Year | Hermes | Gucci | Louis Vuitton | Coffee (control) | Bicycle (control) |
+|---|---|---|---|---|---|
+| 2019 | 100 | 100 | 100 | 100 | 100 |
+| 2020 | 99 | 87 | 90 | 92 | 95 |
+| 2021 | 103 | 174 | 92 | 90 | 86 |
+| 2022 | 105 | 218 | 104 | 102 | 90 |
+| 2023 | 122 | 136 | 116 | 103 | 100 |
+| 2024 | 128 | 91 | 95 | 78 | 70 |
+| 2025 | 116 | 63 | 73 | 58 | 47 |
+| 2026 | 92 | 52 | 52 | 47 | 38 |
+
+Seasonal strength (0 = none, 1 = very strong). Google Trends: Hermes 0.58, Gucci 0.05, Louis Vuitton 0.07. Wikipedia: Hermes 0.26, Gucci 0.00, Louis Vuitton 0.24, Coffee 0.30, Bicycle 0.05.
+
+1. After removing seasonality, Gucci's search-interest trend fell from 100 to about 60 by 2025 and was 61 in 2026. Louis Vuitton drifted to about 89-93. Hermes dipped to 95 in 2023 and rose to 121 in 2026.
+2. Hermes is the only brand that looks resilient on both sources: rising on Google Trends and well above the Wikipedia controls.
+3. Gucci declined on both sources, but its Wikipedia fall (to 52) is close to Coffee's (47), so that fall alone is not evidence of a brand-specific loss.
+4. A seasonal pattern is clear only for Hermes on Google Trends. For Gucci and Louis Vuitton, large irregular spikes dominate.
+5. The early-2026 surge in Gucci and Louis Vuitton searches barely moves their trend components, which is consistent with the robust method treating a short burst as irregular. Whether it is a short spike or a new level cannot yet be settled.
+
+Limits: seasonal strength is a variance ratio, so large spikes lower it. Trend estimates near the end of a series are less stable. Robust smoothing downweights short bursts. Three brands only. Google Trends values are relative.
 
 ## 3. Survey evidence: BCG-Altagamma True-Luxury Global Consumer Insights 2026
 
