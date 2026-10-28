@@ -23,7 +23,8 @@ for mode in ["TimelineVol", "TimelineTone"]:
     print(f"--- {mode}: HTTP {resp.status_code}")
     print(resp.text[:300])
     if resp.status_code == 429:
-        raise SystemExit("Throttled by GDELT. Wait and try again later.")
+        raise SystemExit("Throttled by GDELT. Stop and try again another day.")
+    if resp.status_code == 200 and resp.text.strip():
         try:
             df = pd.read_csv(io.StringIO(resp.text))
             print(df.head(3))
