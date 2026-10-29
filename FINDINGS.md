@@ -182,6 +182,17 @@ Method: the series are stored in a SQLite database (tables: series, observations
 5. Under the stricter change-point setting, months where more than one series breaks: 2023-04 (quiet luxury and luxury handbags searches), 2024-05 (Louis Vuitton and Coffee on Wikipedia), 2024-08 (luxury watches searches and Gucci on Wikipedia), 2025-08 (all four category terms) and 2026-03 (Gucci and Louis Vuitton searches).
 
 Limits: grouping by exact month misses breaks one month apart (for example Bicycle in 2024-06 next to the 2024-05 pair). The 2024-08 match across different sources is probably chance. Google Trends values are relative: 100 is the peak within that one pull.
+## 2g. SQL layer and cross-checks
+
+Method: the series are stored in a SQLite database (tables: series, observations, change_points) built by src/db/build_db.py and queried with SQL (joins, CTEs, window functions) in notebooks/12_sql_queries.py. The database is rebuilt from the CSV files and is not committed. Data sources: Google Trends; Wikimedia Pageviews API (CC0).
+
+1. The SQL queries reproduce the Wikipedia indexed table in section 2 exactly, which checks the database against the earlier results.
+2. Largest month-to-month moves in the Google Trends brand series: Gucci +50 and Louis Vuitton +56 in April 2026, reversing by about -53 each in June 2026. Also Gucci +40 in November 2021 and -26 in January 2022.
+3. Gucci's monthly value was 28 in January 2026, 100 in April (the highest value in the whole 2019-2026 pull of three brands), 92 in May, 39 in June and 34 in September, about 21% above January. The early-2026 episode was a burst of about three months that mostly reverted. Hermes rose more gently (29 to 42, then 35 in September). The cause is not established.
+4. A trailing 12-month average still read about 49 for Gucci in September 2026 against a raw value of 34, because the window still contains the April and May burst. Smoothing can hide a reversion.
+5. Under the stricter change-point setting, months where more than one series breaks: 2023-04 (quiet luxury and luxury handbags searches), 2024-05 (Louis Vuitton and Coffee on Wikipedia), 2024-08 (luxury watches searches and Gucci on Wikipedia), 2025-08 (all four category terms) and 2026-03 (Gucci and Louis Vuitton searches).
+
+Limits: grouping by exact month misses breaks one month apart (for example Bicycle in 2024-06 next to the 2024-05 pair). The 2024-08 match across different sources is probably chance. Google Trends values are relative: 100 is the peak within that one pull.
 
 ## 3. Survey evidence: BCG-Altagamma True-Luxury Global Consumer Insights 2026
 
