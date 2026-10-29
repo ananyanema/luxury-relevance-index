@@ -9,6 +9,8 @@ Every source is open or public, and we publish only our own counts and charts, n
 | GDELT | Access was rate-limited on repeated attempts, so no data was collected. The search API asks for one request every 5 seconds, and our requests were still refused. We did not try to work around the limit. |
 | BCG-Altagamma True-Luxury Global Consumer Insights 2026 | Consumer motivations (survey) | Trends over time; individual behaviour | Public report. Findings cited in our own words | No. No copied tables, PDF not hosted |  read and cited |
 | Amazon Reviews 2023 (optional) | Buyer opinions up to Sep 2023 | Luxury in general; 2025-2026 | Licence not yet checked. Reviewer IDs must be dropped | No | Optional, later |
+| Kering 2025 results press release | Company performance | Public company document. Facts paraphrased | No | Read and cited |
+| Reuters reporting on Kering (10 Feb 2026) and LVMH (26 Jul 2026) and the sectors the sector’s market value (13 Oct 2026), read via syndicated copies because Reuters blocks automated access”.| Performance context | Copyrighted news. We paraphrase facts and link, with no copying | No | Cited. LVMH figures to verify |
 
 ## Rules we follow
 1. Credit every source.

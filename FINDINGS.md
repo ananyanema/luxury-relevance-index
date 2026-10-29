@@ -244,6 +244,34 @@ Source: https://mg2.com/latest/how-consumers-are-redefining-their-relationship-w
 2. More than 3 in 4 still associate luxury with owning something rare or of status.
 
 This suggests status has not disappeared, so the verdict on question 3 may be "partly supported".
+## 7. Performance context: company results and press reports
+
+Company-wide results, not brand-level except Gucci. Facts paraphrased by us. Kering figures come from its own press release. LVMH figures come from press reports and still need checking against LVMH's own releases.
+
+Kering, 2025 results press release (10 February 2026): https://www.nasdaq.com/press-release/kering-2025-results-sequential-improvement-unlocking-next-phase-sustainable
+
+1. Kering revenue was EUR 14.7 billion, down 13% as reported and 10% on a comparable basis.
+2. Recurring net income from continuing operations was EUR 532 million, down 56%. After non-recurring items, mostly restructuring, net income from continuing operations was a loss of EUR 29 million, against a profit of EUR 1,025 million in 2024.
+3. Gucci revenue was about EUR 6 billion, down 22% as reported and 19% on a comparable basis. Gucci's recurring operating income was EUR 966 million, down 40%.
+
+Reuters reporting, read through syndicated copies:
+- Kering, 10 February 2026: https://d2233.cms.socastsrm.com/2026/02/10/kerings-fourth-quarter-sales-fall-less-than-expected-as-gucci-slide-continues
+- LVMH, 26 July 2026: https://www.thestandard.com.hk/finance/article/338409/LVMH-sales-tick-up-as-US-luxury-demand-offsets-hit-from-Iran-war
+
+4. Reuters reported that Kering's operating income of EUR 1.63 billion was less than a third of its 2022 level, with Gucci's operating margin at 16% against 36% three years earlier.
+5. Reuters reported that LVMH's first-half 2026 profit from operations fell 4% to EUR 8.7 billion with a broadly stable operating margin, and that its shares were down 28% for the year to that date.
+6. Press reports of LVMH's 2025 results: revenue down 1% to EUR 80.8 billion and operating profit down 9% to EUR 17.8 billion.
+Reuters, "European luxury's $350 billion blowout" (13 October 2026): https://www.reuters.com/business/retail-consumer/european-luxurys-350-billion-blowout-2026-10-13/ . Reuters blocks automated access, so we read the article through syndicated copies.
+
+7. Reuters reported that the ten largest listed European luxury companies lost about USD 350 billion of combined market value since the start of 2026, as hopes of a sector rebound faded and weakness in China persisted.
+8. The combined market value of LVMH, Hermes, Kering and Richemont has nearly halved since around 2024. Richemont, focused on watches and jewellery, held up better. LVMH shares were down more than 40% for the year.
+9. LVMH's third-quarter fashion and leather goods sales missed expectations, with China in focus. A secondary summary gives a 5% organic decline against an expected 1.8% fall. We have not yet checked this against LVMH's own release.
+
+Market values reflect investors' expectations, not sales, profits or consumer interest. In early 2026, searches for Gucci and Louis Vuitton spiked (section 2g) while market values fell, so attention and valuation moved differently. This is an observation, not an explanation. Our attention data is global and cannot isolate China.
+
+How this compares with our data: Gucci's search-interest trend fell about 40% from 2019 to 2025 (section 2b) and its reported 2025 revenue fell 22%. The direction is the same. This is a description and not evidence that attention causes or predicts sales.
+
+Limits: company-wide figures except Gucci. "Recurring" figures exclude items the company classes as non-recurring. Hermes is not covered. Reuters content is copyrighted, so we paraphrase facts and link, and do not copy. LVMH figures are not yet checked against LVMH's own releases.
 
 ## Status of the hypotheses (preliminary)
 
