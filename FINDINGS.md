@@ -278,7 +278,7 @@ Limits: company-wide figures except Gucci. "Recurring" figures exclude items the
 | Question | Status |
 |---|---|
 | 1. Interest rising or declining? | Mixed so far. Trends and Wikipedia disagree for 2025-2026. |
-| 2. Coverage and discussion changing? | Not tested. GDELT access is blocked for now. |
+| 2. Coverage and discussion changing? | Partly. The vocabulary changed: searches for "quiet luxury" went from near zero to a sustained term, with a robust break in April 2023, and its Wikipedia article has data only from late 2023 with steady views since 2024. We have no systematic measure of how coverage or tone changed over time, because news-data access was rate-limited, and attention data cannot show what people say. |
 | 3. Shift from status toward craftsmanship, heritage, experience? | Surveys lean toward craft and emotional connection over status, but status has not disappeared. Our own proxy test is not done. |
 | 4. Segments and brands differ? | Segments: not supported as distinct patterns, they move mostly as one. Brands: partly supported, Hermes behaves differently from Gucci and Louis Vuitton. Three brands only. |
 | 5. Early signals? | Not supported by our tests. No consistent lead between Wikipedia and Google Trends, and controls behave similarly. One 2021 Gucci episode is an observation only. A shared break in 2025-08 across the category terms is unexplained. |
