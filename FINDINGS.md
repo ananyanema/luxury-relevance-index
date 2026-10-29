@@ -1,6 +1,6 @@
 # Findings so far (work in progress)
 
-Last updated: 26 October 2026. Each finding states what the data shows and what it does not show. Sections 1 and 2 use our own data. Sections 3 to 6 are other organisations' findings, paraphrased by us and linked to their source.
+Last updated: 29 October 2026. Each finding states what the data shows and what it does not show. Sections 1 and 2 use our own data. Sections 3 to 6 are other organisations' findings, paraphrased by us and linked to their source.
 
 ## 1. Own data: Google Trends (2019 to 2026)
 
@@ -274,12 +274,15 @@ How this compares with our data: Gucci's search-interest trend fell about 40% fr
 Limits: company-wide figures except Gucci. "Recurring" figures exclude items the company classes as non-recurring. Hermes is not covered. Reuters content is copyrighted, so we paraphrase facts and link, and do not copy. LVMH figures are not yet checked against LVMH's own releases.
 
 ## Status of the hypotheses (preliminary)
+## Conclusions (current)
 
-| Question | Status |
-|---|---|
-| 1. Interest rising or declining? | Mixed so far. Trends and Wikipedia disagree for 2025-2026. |
-| 2. Coverage and discussion changing? | Partly. The vocabulary changed: searches for "quiet luxury" went from near zero to a sustained term, with a robust break in April 2023, and its Wikipedia article has data only from late 2023 with steady views since 2024. We have no systematic measure of how coverage or tone changed over time, because news-data access was rate-limited, and attention data cannot show what people say. |
-| 3. Shift from status toward craftsmanship, heritage, experience? | Surveys lean toward craft and emotional connection over status, but status has not disappeared. Our own proxy test is not done. |
-| 4. Segments and brands differ? | Segments: not supported as distinct patterns, they move mostly as one. Brands: partly supported, Hermes behaves differently from Gucci and Louis Vuitton. Three brands only. |
-| 5. Early signals? | Not supported by our tests. No consistent lead between Wikipedia and Google Trends, and controls behave similarly. One 2021 Gucci episode is an observation only. A shared break in 2025-08 across the category terms is unexplained. |
-| 6. Strategies worth investigating? | Not started. The forecast backtest shows own-history forecasts add little beyond one month, so question 6 will rest on scenarios and the cited surveys, not predictions. |
+These match the README. Question 1 may be revised after the experimental relevance index is added.
+
+| Question | Conclusion | Where the evidence is |
+|---|---|---|
+| 1. Is interest rising or declining? | Mixed. Searches for four luxury terms were higher in 2025-2026 than in 2019-2024, but Wikipedia readership fell for the brands and for unrelated control articles alike. Hermes held up on both sources, while Gucci fell on searches. A shared jump across the four search terms in August 2025 is unexplained. | Sections 1, 2, 2b, 2c, 2g. Context in section 7. |
+| 2. Is the way luxury is discussed changing? | Partly. "Quiet luxury" went from near zero to a sustained search term, with a robust break in April 2023. No measure of news coverage or tone over time, because news-data access was rate-limited. | Sections 1, 2, 2c. |
+| 3. Is there a shift from status toward craftsmanship, heritage or experience? | Partly supported. Published surveys point away from logos and toward quality, emotional connection and experiences, though status associations remain widespread. Our own data measures attention and cannot show what people value. | Sections 3, 4, 5, 6. |
+| 4. Do segments and brands differ? | Brands partly, segments not. The four search-term segments move mostly as one series. Hermes behaves differently from Gucci and Louis Vuitton. Three brands only, and no audience data per brand. | Sections 2b, 2c, 2d. |
+| 5. Are there early signals? | Not supported. No consistent lead between Wikipedia and Google Trends, and unrelated control pairs showed similar correlations. Forecasts beat simple baselines only slightly, and only about one month ahead. | Sections 2e, 2f. |
+| 6. Which strategies are worth investigating? | Hypotheses only, drawn from cited reports. Our data cannot test whether a strategy works. | Sections 3, 4, 5, 7. |
