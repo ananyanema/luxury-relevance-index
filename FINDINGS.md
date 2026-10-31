@@ -193,6 +193,34 @@ Method: the series are stored in a SQLite database (tables: series, observations
 5. Under the stricter change-point setting, months where more than one series breaks: 2023-04 (quiet luxury and luxury handbags searches), 2024-05 (Louis Vuitton and Coffee on Wikipedia), 2024-08 (luxury watches searches and Gucci on Wikipedia), 2025-08 (all four category terms) and 2026-03 (Gucci and Louis Vuitton searches).
 
 Limits: grouping by exact month misses breaks one month apart (for example Bicycle in 2024-06 next to the 2024-05 pair). The 2024-08 match across different sources is probably chance. Google Trends values are relative: 100 is the peak within that one pull.
+## 2h. Own data: experimental relevance index
+
+Method: for each brand, two components rebased to a 2019 average of 100. (a) The seasonally adjusted Google Trends component. (b) The seasonally adjusted Wikipedia component divided by the average of the Coffee and Bicycle control articles. The midpoint is the average of the two and the band is the range between them. Sensitivity: the Wikipedia component recomputed using each control alone. Category composite: the average z-score of the four category search terms, smoothed over 12 months. 2026 covers January to September. Data sources: Google Trends; Wikimedia Pageviews API (CC0).
+
+| Year | Hermes: Trends | Hermes: Wikipedia vs controls | Hermes: midpoint | Gucci: Trends | Gucci: Wikipedia vs controls | Gucci: midpoint | Louis Vuitton: Trends | Louis Vuitton: Wikipedia vs controls | Louis Vuitton: midpoint |
+|---|---|---|---|---|---|---|---|---|---|
+| 2019 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 |
+| 2020 | 109 | 106 | 108 | 92 | 94 | 93 | 102 | 96 | 99 |
+| 2021 | 110 | 116 | 113 | 87 | 197 | 142 | 101 | 104 | 103 |
+| 2022 | 99 | 109 | 104 | 82 | 229 | 155 | 97 | 108 | 103 |
+| 2023 | 95 | 120 | 108 | 70 | 134 | 102 | 90 | 115 | 102 |
+| 2024 | 103 | 176 | 140 | 63 | 123 | 93 | 89 | 130 | 109 |
+| 2025 | 111 | 220 | 166 | 60 | 119 | 89 | 91 | 138 | 115 |
+| 2026 | 121 | 219 | 170 | 61 | 124 | 93 | 93 | 124 | 109 |
+
+Correlation between the two components: Hermes 0.62, Gucci 0.04, Louis Vuitton -0.84.
+
+Sensitivity, 2026 Wikipedia component by choice of control (both, Coffee only, Bicycle only): Hermes 219, 198, 245. Gucci 124, 112, 139. Louis Vuitton 124, 112, 139.
+
+Category composite, yearly average (z-score): 2019 -0.59, 2020 -0.58, 2021 -0.56, 2022 -0.49, 2023 -0.32, 2024 -0.02, 2025 0.33, 2026 2.64.
+
+1. The two components agree in direction only for Hermes. For Gucci they are unrelated and for Louis Vuitton they move in opposite directions. Correlations between smoothed series rest on few independent observations, so they show the direction of drift and not its strength.
+2. Hermes' midpoint rises to 170 by 2026, but this depends on dividing by control articles whose views fell by more than half. Hermes' raw Wikipedia views in 2026 are below the 2019 level (index 92), so "held up" is more accurate than "grew".
+3. The choice of control changes the Wikipedia component by roughly 10% either way around the two-control value.
+4. The category composite rises mostly after 2025 and inherits the shared August 2025 break and the early-2026 surge from a single Google Trends pull, whose cause is unknown. It should not be read as a lasting rise in relevance.
+5. Because the two sources disagree, the dashboard shows the band and labels the midpoint as the average of the two sources.
+
+Limits: two control articles, and the assumption that they reflect site-wide changes in Wikipedia readership. One Google Trends pull for the categories. Experimental, with no significance tests.
 
 ## 3. Survey evidence: BCG-Altagamma True-Luxury Global Consumer Insights 2026
 
