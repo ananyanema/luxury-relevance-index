@@ -4,14 +4,14 @@ PAGES = [("Scorecard", "/"), ("Relevance index", "/Relevance_index"), ("Methods 
 
 CSS = """
 <style>
-.block-container { max-width: 880px; padding-top: 1.6rem; }
+.block-container, [data-testid="stMainBlockContainer"] { max-width: 880px; padding-top: 2.2rem; }
 #MainMenu, footer { visibility: hidden; }
 .hero-title, .dtitle, .ct, .q, .fn, .ptitle, .note p { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
 .foil { background: linear-gradient(135deg,#8F7440 0%,#E9D197 42%,#B8995F 68%,#F2E2B0 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: #B8995F; }
-.bar { position: relative; border-radius: 6px; padding: 15px 26px; background: linear-gradient(145deg,#6A4630,#3A2417); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; box-shadow: 0 6px 16px rgba(58,36,23,.25); }
-.bar::after { content: ""; position: absolute; inset: 5px; border: 1.5px dashed rgba(230,211,176,.55); border-radius: 3px; pointer-events: none; }
-.bar .mark { font-size: 10px; letter-spacing: .3em; text-transform: uppercase; color: #E9D197; }
-.bar a { color: #E6D3B0 !important; font-size: 10px; letter-spacing: .22em; text-transform: uppercase; text-decoration: none !important; margin-left: 18px; border-bottom: 1px solid transparent; padding: 4px 0; }
+.bar { position: relative; border-radius: 6px; padding: 24px 32px; min-height: 76px; background: linear-gradient(145deg,#6A4630,#3A2417); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; box-shadow: 0 6px 16px rgba(58,36,23,.25); }
+.bar::after { content: ""; position: absolute; inset: 7px; border: 1.5px dashed rgba(230,211,176,.55); border-radius: 3px; pointer-events: none; }
+.bar .mark { font-size: 11px; letter-spacing: .3em; text-transform: uppercase; color: #E9D197; }
+.bar a { color: #E6D3B0 !important; font-size: 11px; letter-spacing: .22em; text-transform: uppercase; text-decoration: none !important; margin-left: 18px; border-bottom: 1px solid transparent; padding: 4px 0; }
 .bar a:hover { border-bottom-color: #E9D197; color: #F6EBD6 !important; }
 .leather { position: relative; border-radius: 6px; padding: 40px 36px 38px; margin-top: 16px; background: linear-gradient(145deg,#6A4630 0%,#4A2F1F 55%,#3A2417 100%); box-shadow: 0 10px 24px rgba(58,36,23,.28), inset 0 1px 0 rgba(255,255,255,.10); }
 .leather::after { content: ""; position: absolute; inset: 10px; border: 1.5px dashed rgba(230,211,176,.7); border-radius: 3px; pointer-events: none; }
@@ -55,7 +55,7 @@ a.pn { color: #1F1B17 !important; border-bottom: 1px solid #1F1B17; text-decorat
 .care { display: block; max-width: 640px; border: 1px dashed #BDB29C; background: #FBF8F1; padding: 10px 14px; font-size: 12.5px; line-height: 1.6; color: #4A443B; }
 .foot { display: inline-block; margin-top: 26px; border: 1px dashed #BDB29C; background: #FBF8F1; padding: 10px 14px; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; line-height: 1.8; color: #6B655B; }
 
-[data-testid="stSidebar"], [data-testid="stSidebarCollapsedControl"], [data-testid="collapsedControl"] { display: none !important; }
+[data-testid="stHeader"], [data-testid="stToolbar"], [data-testid="stSidebar"], [data-testid="stExpandSidebarButton"], [data-testid="stSidebarCollapseButton"], [data-testid="stSidebarCollapsedControl"], [data-testid="collapsedControl"] { display: none !important; }
 .flist { max-width: 680px; margin: 4px 0 0; padding-left: 22px; font-size: 13.5px; line-height: 1.65; }
 .flist li { margin-bottom: 7px; }
 .links { max-width: 680px; margin: 4px 0 0; padding-left: 18px; font-size: 13px; line-height: 1.6; }
