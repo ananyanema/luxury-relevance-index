@@ -38,8 +38,8 @@ These come from the cited reports, not from our own tests. A brand with its own 
 5. Focus on top-tier clients, whose share of spend has grown.
 
 ## What this project can and cannot say
-
 It can show how public attention moved, and which popular readings of it are misleading. For example, a fall in Wikipedia views looks like lost interest until unrelated articles are shown to have fallen too. It cannot say what consumers think or buy, or why, and it does not predict sales. News coverage, consumer text and brand-level sales were not available to us.
+
 ## Run the dashboard
 pip install -r requirements.txt
 streamlit run app/app.py
