@@ -12,7 +12,7 @@ How relevant is luxury today, and is what people value in luxury changing? An in
 
 ## Status
 
-Analysis complete. An experimental relevance index and a dashboard are in progress. Full results, methods and limits are in FINDINGS.md. Sources are in SOURCES.md.
+First version complete (November 2026): analysis, findings and a multi-page dashboard. See FINDINGS.md for full results, methods and limits, and SOURCES.md for sources.
 
 ## Conclusions
 

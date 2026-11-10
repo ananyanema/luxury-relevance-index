@@ -1,6 +1,6 @@
-# Findings so far (work in progress)
+# Findings 
 
-Last updated: 29 October 2026. Each finding states what the data shows and what it does not show. Sections 1 and 2 use our own data. Sections 3 to 6 are other organisations' findings, paraphrased by us and linked to their source.
+Last updated: November 2026. Each finding states what the data shows and what it does not show. Sections 1 to 2h use our own data. Sections 3 to 7 are other organisations' findings, paraphrased by us and linked to their source.
 
 ## 1. Own data: Google Trends (2019 to 2026)
 
@@ -301,10 +301,10 @@ How this compares with our data: Gucci's search-interest trend fell about 40% fr
 
 Limits: company-wide figures except Gucci. "Recurring" figures exclude items the company classes as non-recurring. Hermes is not covered. Reuters content is copyrighted, so we paraphrase facts and link, and do not copy. LVMH figures are not yet checked against LVMH's own releases.
 
-## Status of the hypotheses (preliminary)
-## Conclusions (current)
+## Status of the hypotheses
+## Conclusions 
 
-These match the README. Question 1 may be revised after the experimental relevance index is added.
+ These match the README. The relevance index is now included (section 2h), and these conclusions change only if new data is added.
 
 | Question | Conclusion | Where the evidence is |
 |---|---|---|
