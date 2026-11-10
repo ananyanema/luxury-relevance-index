@@ -46,6 +46,12 @@ streamlit run app/app.py
 
 The dashboard reads the CSV files in data/raw and data/processed. Notebook scripts that produce them are listed in notebooks/README.md.
 
+## Screenshots
+
+![Home page](docs/home.png.png)
+![relevence index](docs/index.png.png)
+![Question 1](docs/question1.png.png)
+
 ## Data and attribution
 Data source: Google Trends (https://www.google.com/trends). Other sources are listed in SOURCES.md.
 
