@@ -4,7 +4,7 @@ How relevant is luxury today, and is what people value in luxury changing? An in
 
 ## Live dashboard
 
-https://luxury-relevance-index-5sbe6liennpd7lpvagxnyh.streamlit.app/
+https://luxury-relevance-index.streamlit.app/
 
 ## Questions
 1. Is interest in luxury rising or declining?
