@@ -14,6 +14,10 @@ https://luxury-relevance-index.streamlit.app/
 5. Are there early signals of changing preferences?
 6. Which strategies are worth investigating for brands?
 
+## Status
+
+First version complete (November 2026): analysis, findings and a multi-page dashboard. See FINDINGS.md for full results, methods and limits, and SOURCES.md for sources.
+
 ## Summary
 
 I tested whether public attention to luxury is rising or falling, using Google Trends and Wikipedia page views (2019 to 2026) for three brands and four category terms. The main finding: most of the fall in brand Wikipedia views also appears in unrelated control articles, so it is a site-wide decline and not evidence of lost interest in luxury. Searches rose for four luxury terms in 2025-2026, Hermes held up on both sources, and no early-warning signal between the two sources held up under testing.
@@ -27,10 +31,6 @@ I tested whether public attention to luxury is rising or falling, using Google T
 - Data layer: SQLite database queried with SQL (joins, CTEs, window functions)
 - Experimental relevance index combining both sources, rescaled against control articles
 - Dashboard: Streamlit, multi-page
-
-## Status
-
-First version complete (November 2026): analysis, findings and a multi-page dashboard. See FINDINGS.md for full results, methods and limits, and SOURCES.md for sources.
 
 ## Conclusions
 
